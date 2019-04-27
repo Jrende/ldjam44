@@ -3,26 +3,23 @@ using UnityEngine.AI;
 
 public class HandMovement : MonoBehaviour
 {
-    private NavMeshAgent agent;
-    public float distance = 50f;
-    private Rigidbody rigidBody;
-    //private Transform transform;
-        
+    private Plane groundPlane;
+    public GameObject planeGameObject;
+    
     void Start()
     {
-        //agent = GetComponent<NavMeshAgent>();
-        //rigidBody = GetComponent<Rigidbody>();
-        //transform = GetComponent<Transform>();            
+        groundPlane = new Plane(planeGameObject.transform.up, planeGameObject.transform.position);
     }
 
-    void Update()
-    {
+    void Update() { 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, distance))
+        float rayDistance;
+        if (groundPlane.Raycast(ray, out rayDistance))
         {
-            Vector3 v = hit.point;
-            v.y = 0;
+            
+            Vector3 v = ray.GetPoint(rayDistance);
+            //Debug.DrawLine(hit.point, hit.point * 2, new Color(1.0f, 1.0f, 1.0f));
+            //v.y = 0;
             //rigidBody.position = v;
             transform.position = v;
 

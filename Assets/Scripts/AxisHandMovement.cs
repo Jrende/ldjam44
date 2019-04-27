@@ -5,7 +5,7 @@ public class AxisHandMovement : MonoBehaviour
 {
     public int index;
     //private Transform transform;
-    private float speed = 5;
+    private float speed = 1;
 
     void Start()
     {
