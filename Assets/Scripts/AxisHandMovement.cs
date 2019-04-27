@@ -5,6 +5,7 @@ public class AxisHandMovement : MonoBehaviour
 {
     public int index;
     //private Transform transform;
+    private float speed = 5;
 
     void Start()
     {
@@ -15,9 +16,9 @@ public class AxisHandMovement : MonoBehaviour
 
     void Update()
     {
-        float horiz = Input.GetAxis("Horizontal" + index);
-        float vert = Input.GetAxis("Vertical" + index);
+        float horiz = Input.GetAxis("Horizontal" + index) / speed;
+        float vert = Input.GetAxis("Vertical" + index) / speed;
 
-        transform.position += new Vector3(horiz, 0, vert);
+        transform.position += new Vector3(-horiz, 0, vert);
     }
 }
