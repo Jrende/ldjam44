@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3281511418989773914}
   m_Layer: 0
   m_Name: Mynt
-  m_TagString: Untagged
+  m_TagString: $
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3281511418989773922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44927, y: 0.44927, z: 0.44927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5398589135400408969}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3281511418989773922}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -93,7 +93,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3281511418989773916
 MonoBehaviour:
@@ -107,8 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778e39291fc3e8e4fabd7ab1b2ec3ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palm: {fileID: 0}
-  target: {fileID: 0}
 --- !u!195 &3281511418989773919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -173,7 +171,7 @@ Transform:
   m_GameObject: {fileID: 7416834469489731319}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2258332, y: 2.2258332, z: 2.2258332}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3281511418989773918}
   m_RootOrder: 0
