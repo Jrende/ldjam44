@@ -438,16 +438,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4337993373346714358, guid: 5c8c094657cec5cce870d68f47daf3c4,
-        type: 3}
-      propertyPath: va
-      value: 
-      objectReference: {fileID: 2997864315648276359}
     - target: {fileID: 4337993373095460800, guid: 5c8c094657cec5cce870d68f47daf3c4,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4337993373346714358, guid: 5c8c094657cec5cce870d68f47daf3c4,
+        type: 3}
+      propertyPath: va
+      value: 
+      objectReference: {fileID: 2997864315648276359}
     - target: {fileID: 4337993372133988883, guid: 5c8c094657cec5cce870d68f47daf3c4,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -548,31 +548,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5544499850195604201, guid: 5513c485a878c984eb8bf497514f7074,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -594,6 +569,31 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5544499850195604201, guid: 5513c485a878c984eb8bf497514f7074,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544499849887415216, guid: 5513c485a878c984eb8bf497514f7074,
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
@@ -755,9 +755,19 @@ PrefabInstance:
     - target: {fileID: 4830936669132644230, guid: f59baf32ca12c584bb1f1d10e6468510,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: 1146613775
+      value: -1939653983
       objectReference: {fileID: 0}
     - target: {fileID: 4830936669132644230, guid: f59baf32ca12c584bb1f1d10e6468510,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751866827175547696, guid: f59baf32ca12c584bb1f1d10e6468510,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1939653983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751866827175547696, guid: f59baf32ca12c584bb1f1d10e6468510,
         type: 3}
       propertyPath: m_SortingLayer
       value: 1
