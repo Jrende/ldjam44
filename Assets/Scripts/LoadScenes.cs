@@ -14,4 +14,29 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    public void LoadNextLevel()
+    {
+        string name = SceneManager.GetActiveScene().name;
+
+        if (name == "IntroScene")
+        {
+            Load("Level1");
+        }
+        else if (name == "Level1")
+        {
+            Load("Level2");
+        }
+        else if (name == "Level2")
+        {
+            Load("Level3");
+        }
+        else if (name == "Level3")
+        {
+            Load("Level4");
+        }
+        else if (name == "Level4")
+        {
+            Load("EndScene");
+        }
+    }
 }
