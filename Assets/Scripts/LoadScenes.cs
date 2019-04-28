@@ -14,6 +14,10 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void LoadNextLevel()
     {
         string name = SceneManager.GetActiveScene().name;

@@ -8,6 +8,7 @@ public class VictoryCondition : MonoBehaviour
 	public int requiredForVictory;
     public GameObject victoryScreen;
 	public GameObject defeatScreen;
+    public bool hasWon = false;
     public UnityEvent m_VictoryEvent;
     public static int globalCashCaught = 0;
 
@@ -30,6 +31,7 @@ public class VictoryCondition : MonoBehaviour
         globalCashCaught = currentCash;
         if (currentCash >= requiredForVictory)
         {
+            hasWon = true;
             m_VictoryEvent.Invoke();
         }
     }
@@ -45,6 +47,9 @@ public class VictoryCondition : MonoBehaviour
 	}
 
 	public void loseByTimeUp() {
-		defeatScreen.SetActive(true);
+        if (hasWon != true)
+        {
+            defeatScreen.SetActive(true);
+        }
 	}
 }
