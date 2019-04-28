@@ -65,8 +65,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1351518141
-  m_SortingLayer: 3
+  m_SortingLayerID: -1939653983
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0cac539c94a168b489e9a481e1080dfd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1146613775
+  m_SortingLayerID: -1939653983
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f827ee30fcf6b9747a37071f01f6ed1d, type: 3}
@@ -525,26 +525,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7468298328163271798, guid: eb8624e3cb6300248a6dcd1f30a94827,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -561,6 +541,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7468298328163271798, guid: eb8624e3cb6300248a6dcd1f30a94827,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 794532220717865401, guid: eb8624e3cb6300248a6dcd1f30a94827,
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
@@ -586,16 +586,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8171832362252397722}
     m_Modifications:
-    - target: {fileID: 5900247080299837880, guid: 6771bee1df756d144a7e249c3fc8617c,
-        type: 3}
-      propertyPath: m_Name
-      value: DefeatScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 5900247080299837880, guid: 6771bee1df756d144a7e249c3fc8617c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5900247080299837884, guid: 6771bee1df756d144a7e249c3fc8617c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -699,6 +689,16 @@ PrefabInstance:
     - target: {fileID: 5900247080299837884, guid: 6771bee1df756d144a7e249c3fc8617c,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900247080299837880, guid: 6771bee1df756d144a7e249c3fc8617c,
+        type: 3}
+      propertyPath: m_Name
+      value: DefeatScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900247080299837880, guid: 6771bee1df756d144a7e249c3fc8617c,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5261511062394849818, guid: 6771bee1df756d144a7e249c3fc8617c,
