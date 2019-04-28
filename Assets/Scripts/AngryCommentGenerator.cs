@@ -17,7 +17,12 @@ public class AngryCommentGenerator : MonoBehaviour
             "Dude, pay or that can will get neatly packaged up yours!",
             "Dude, pay or I’m calling the police, they’re gonna make you pay in lead, bro…"
         }, new string[]{
-            "INSERT TEXT HERE"
+            "Lägg upp stålarna på brickan, tack…",
+            "Kan du lägga pengarna på brickan?", 
+            "Du, du kan inte försöka vara liiite långsammare?",
+            "Hörru, det är folk som står i kö här.",
+            "Asså, tänker du betala idag eller?",
+            "Vi har väntat ganska länge här bak..."
         }, new string[]{
             "Comrade, hurry it up.", "I feel like been queueing since Perestroika!", "Blyad, can you be any slower?",
             "This is like queueing for buying Lada.", "Are you trying to bring down system by being slow, comrade?",
