@@ -15,9 +15,9 @@ public class AngryCommentGenerator : MonoBehaviour
             "Are you buying up the whole store or what?", "Are you paying or are you not?",
             "Are you waiting for the federal bank to pay for you or what?",
             "Dude, pay or that can will get neatly packaged up yours!",
-            "Dude, pay or I’m calling the police, they’re gonna make you pay in lead, bro…"
+            "Dude, pay or I’m calling the police, they’re gonna make you pay in lead, bro..."
         }, new string[]{
-            "Lägg upp stålarna på brickan, tack…",
+            "Lägg upp stålarna på brickan, tack...",
             "Kan du lägga pengarna på brickan?", 
             "Du, du kan inte försöka vara liiite långsammare?",
             "Hörru, det är folk som står i kö här.",
