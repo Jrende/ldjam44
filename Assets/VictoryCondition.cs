@@ -29,7 +29,6 @@ public class VictoryCondition : MonoBehaviour
             victoryScreen.SetActive(true);
 			//Debug.Log("You are winner!");
 		}
-		Debug.Log("Enter");
 	}
 
 	private void OnTriggerExit(Collider other)
@@ -38,6 +37,5 @@ public class VictoryCondition : MonoBehaviour
 		{
 			currentCash--;
 		}
-		Debug.Log("exit");
 	}
 }
