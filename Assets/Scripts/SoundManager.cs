@@ -7,6 +7,7 @@ using System.Linq;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource ratSound;
+    public AudioSource fallingCashSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,9 @@ public class SoundManager : MonoBehaviour
         int numberOfPanicked = states.Where(state => state == BoidMovement.State.Panic).Count();
         float volume = ((float) numberOfPanicked / (float) totalCoins);
         Debug.Log("volume: " + volume);
-        ratSound.volume = volume;
+        
+        ratSound.volume = Mathf.Min(1.0f, volume);
+        fallingCashSound.volume = volume;
     }
 
     List<BoidMovement.State> getStates()
