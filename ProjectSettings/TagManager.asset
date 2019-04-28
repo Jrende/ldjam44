@@ -6,6 +6,7 @@ TagManager:
   tags:
   - $
   - hand
+  - terrain
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,7 @@ TagManager:
     locked: 0
   - name: Menu
     uniqueID: 1351518141
+    locked: 0
+  - name: Shopkeep
+    uniqueID: 1906119775
     locked: 0
