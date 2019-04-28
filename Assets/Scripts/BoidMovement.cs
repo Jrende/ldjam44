@@ -15,7 +15,7 @@ public class BoidMovement : MonoBehaviour
     float wanderSpeed = 1.5f;
     Random rnd = new Random();
 
-    enum State { Panic, Wander, Caught };
+    public enum State { Panic, Wander, Caught };
     State currentState = State.Wander;
 
     void Start()
@@ -62,11 +62,9 @@ public class BoidMovement : MonoBehaviour
         if (currentState == State.Caught)
         {
             float distToTarget = Vector3.Distance(transform.position, target);
-            //Debug.Log("dist " + distToTarget);
             if (distToTarget < 1.0f)
             {
                 target = getRandomPositionInVictoryArea();
-                //Debug.Log("Go to new area in vic");
             }
             agent.destination = target;
         }
@@ -95,7 +93,6 @@ public class BoidMovement : MonoBehaviour
         currentState = State.Caught;
         agent.speed = 2;
         agent.velocity = t.normalized;
-        //agent.acceleration = 1;
         target = t;
     }
 
@@ -115,10 +112,6 @@ public class BoidMovement : MonoBehaviour
 
     Vector3 getRandomPositionInVictoryArea()
     {
-        Debug.Log("getRandomPositionInVictoryArea");
-        
-        
-        
         Vector3 newTarget = transform.position + new Vector3(
                 Random.Range(-1.0f, 1.0f),
                 0,
@@ -126,7 +119,6 @@ public class BoidMovement : MonoBehaviour
         NavMeshHit hit;
         int navMeshArea = 1 << NavMesh.GetAreaFromName("Victory");
         NavMesh.SamplePosition(newTarget, out hit, 5, navMeshArea);
-        Debug.Log("navMeshArea " + navMeshArea);
        
         return hit.position;
     }
@@ -145,5 +137,10 @@ public class BoidMovement : MonoBehaviour
             }
         }
         return selectedTransform.position;
+    }
+
+    public State GetCurrentState()
+    {
+        return currentState;
     }
 }
