@@ -703,7 +703,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.02734375, y: -0.04296875, z: 0, w: 10}
+  m_BoundingSphereOverride: {x: 7.57e-43, y: 0.20682955, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1862,7 +1862,7 @@ MonoBehaviour:
   requiredForVictory: 16
   victoryScreen: {fileID: 1262587899}
   defeatScreen: {fileID: 0}
-  m_MyEvent:
+  m_VictoryEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1262587899}
@@ -1875,7 +1875,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &1988020997
@@ -2082,11 +2082,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlaneDistance
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415740200281470943, guid: eb8624e3cb6300248a6dcd1f30a94827,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6415740200281470943, guid: eb8624e3cb6300248a6dcd1f30a94827,
         type: 3}
