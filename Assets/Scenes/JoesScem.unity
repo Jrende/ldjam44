@@ -1859,7 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2351a7f1d5b45154a8d202151728735d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredForVictory: 5
+  requiredForVictory: 16
   victoryScreen: {fileID: 1262587899}
   defeatScreen: {fileID: 0}
   m_MyEvent:
