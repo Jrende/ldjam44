@@ -9,6 +9,8 @@ public class VictoryCondition : MonoBehaviour
     public GameObject victoryScreen;
 	public GameObject defeatScreen;
     public UnityEvent m_VictoryEvent;
+    public UnityEvent m_CashCaughtEvent;
+    public static int globalCashCaught = 0;
 
     void Start()
 	{
@@ -26,6 +28,7 @@ public class VictoryCondition : MonoBehaviour
                 currentCash++;
             }
         }
+        globalCashCaught = currentCash;
         if (currentCash >= requiredForVictory)
         {
             m_VictoryEvent.Invoke();
