@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class AngryCommentGenerator : MonoBehaviour {
+public class AngryCommentGenerator : MonoBehaviour
+{
 
-    public int currentLevelIdx = 0;
-
-    private string[][] commentLists = new string[3][]{
+    private int currentLevelIdx = 0;
+    private string[][] commentLists = new string[4][]{
         new string[]{
             "Can you hurry up?", "What's taking so long?", "Hey man, I'm in a rush here.", "Dude, like, seriously?",
             "Is this gonna take all day?", "Buddy, there's a lotta folks queueing.", "Hot damn, this is like the DMV all over!",
@@ -15,7 +16,8 @@ public class AngryCommentGenerator : MonoBehaviour {
             "Are you waiting for the federal bank to pay for you or what?",
             "Dude, pay or that can will get neatly packaged up yours!",
             "Dude, pay or I’m calling the police, they’re gonna make you pay in lead, bro…"
-
+        }, new string[]{
+            "INSERT TEXT HERE"
         }, new string[]{
             "Comrade, hurry it up.", "I feel like been queueing since Perestroika!", "Blyad, can you be any slower?",
             "This is like queueing for buying Lada.", "Are you trying to bring down system by being slow, comrade?",
@@ -32,22 +34,41 @@ public class AngryCommentGenerator : MonoBehaviour {
     };
     private TextMeshProUGUI[] uiTexts;
 
-    void Start() {
+    void Start()
+    {
         uiTexts = this.gameObject.GetComponentsInChildren<TextMeshProUGUI>();
+        currentLevelIdx = getIndexFromSceneName(SceneManager.GetActiveScene().name);
         StartCoroutine("CommenterFunction");
     }
 
-    void Update() {
-        
+    void Update()
+    {
+
     }
 
-    IEnumerator CommenterFunction() {
-        while (true) {
+    private int getIndexFromSceneName(string sceneName)
+    {
+        Dictionary<string, int> sceneIndexes = new Dictionary<string, int>{
+            { "Level 1", 0 },
+            { "Level 2", 1 },
+            { "Level 3", 2 },
+            { "Level 4", 3 }
+        };
+        int defaultValue = 0;
+        sceneIndexes.TryGetValue(sceneName, out defaultValue);
+        return defaultValue;
+    }
+
+    IEnumerator CommenterFunction()
+    {
+        while (true)
+        {
             yield return new WaitForSeconds(Random.Range(3.0f, 5.0f));
-            foreach (var uiText in uiTexts) {
+            foreach (var uiText in uiTexts)
+            {
                 uiText.text = "";
             }
-            uiTexts[Random.Range(0, uiTexts.Length-1)].text = commentLists[currentLevelIdx][Random.Range(0, commentLists[currentLevelIdx].Length-1)];
+            uiTexts[Random.Range(0, uiTexts.Length - 1)].text = commentLists[currentLevelIdx][Random.Range(0, commentLists[currentLevelIdx].Length - 1)];
         }
     }
 }
