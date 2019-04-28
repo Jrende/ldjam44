@@ -35,7 +35,6 @@ public class BoidMovement : MonoBehaviour
         float handDist = Vector3.Distance(transform.position, closestHand);
 
         if (handDist < avoidDist && currentState != State.Caught) {
-            Debug.Log("Avoid the hand!!");
             target = transform.position + (transform.position - closestHand).normalized * calmDist;
             Debug.DrawLine(target, target + Vector3.up);
             agent.destination = target;
@@ -45,7 +44,6 @@ public class BoidMovement : MonoBehaviour
         }
 
         if (handDist > calmDist && currentState == State.Panic) {
-            Debug.Log("All's chill again");
             currentState = State.Wander;
             agent.speed = wanderSpeed;
             agent.acceleration = 8f;
@@ -53,11 +51,8 @@ public class BoidMovement : MonoBehaviour
 
         if (currentState == State.Wander) {
             float distToTarget = Vector3.Distance(transform.position, target);
-            Debug.Log("target " + target);
-            Debug.Log("dist " + distToTarget);
             if (distToTarget < 2.0f) {
                 target = getRandomPosition();
-                Debug.Log("Arrive! Got to" + target);
             }
             agent.destination = target;
         }
