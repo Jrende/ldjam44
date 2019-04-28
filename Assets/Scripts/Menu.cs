@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
 
     public void restartScene()
     {
-        SceneManager.LoadScene("JoesScem");
+        SceneManager.LoadScene("Level1");
         //Debug.Log("Restart");
     }
 
