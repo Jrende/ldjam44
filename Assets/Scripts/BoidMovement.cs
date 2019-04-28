@@ -14,7 +14,7 @@ public class BoidMovement : MonoBehaviour
     float wanderSpeed = 1.5f;
     Random rnd = new Random();
 
-    enum State { Panic, Wander };
+    enum State { Panic, Wander, Caught };
     State currentState = State.Wander;
 
     void Start()
@@ -27,15 +27,14 @@ public class BoidMovement : MonoBehaviour
         //agent.destination = target;
     }
 
-
     void Update()
     {
         //agent.destination = target.position;
         Vector3 closestHand = getClosestHandPosition();
         //Debug.Log("Closest hand pos: " + closestHand);
         float handDist = Vector3.Distance(transform.position, closestHand);
-        if (handDist < avoidDist)
-        {
+
+        if (handDist < avoidDist && currentState != State.Caught) {
             Debug.Log("Avoid the hand!!");
             target = transform.position + (transform.position - closestHand).normalized * calmDist;
             Debug.DrawLine(target, target + Vector3.up);
@@ -44,27 +43,32 @@ public class BoidMovement : MonoBehaviour
             agent.acceleration = 15f;
             currentState = State.Panic;
         }
-        if (handDist > calmDist && currentState == State.Panic)
-        {
+
+        if (handDist > calmDist && currentState == State.Panic) {
             Debug.Log("All's chill again");
             currentState = State.Wander;
             agent.speed = wanderSpeed;
             agent.acceleration = 8f;
         }
-        if (currentState == State.Wander)
-        {
-            
+
+        if (currentState == State.Wander) {
             float distToTarget = Vector3.Distance(transform.position, target);
             Debug.Log("target " + target);
             Debug.Log("dist " + distToTarget);
-            if (distToTarget < 2.0f)
-            {
+            if (distToTarget < 2.0f) {
                 target = getRandomPosition();
                 Debug.Log("Arrive! Got to" + target);
             }
             agent.destination = target;
         }
+        
         Debug.DrawLine(transform.transform.position, target);
+    }
+
+    public void catchBoid() {
+        currentState = State.Caught;
+        NavMeshAgent nma = this.GetComponent(typeof(NavMeshAgent)) as NavMeshAgent;
+        nma.enabled = false;
     }
 
     Vector3 getRandomPosition()

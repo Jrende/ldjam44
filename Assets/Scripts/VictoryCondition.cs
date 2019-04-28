@@ -24,6 +24,8 @@ public class VictoryCondition : MonoBehaviour
 		if (other.gameObject.tag == "$")
 		{
 			currentCash++;
+			BoidMovement bm = other.gameObject.GetComponent(typeof(BoidMovement)) as BoidMovement;
+			bm.catchBoid();
 		}
 		if (currentCash >= requiredForVictory) {
             victoryScreen.SetActive(true);
