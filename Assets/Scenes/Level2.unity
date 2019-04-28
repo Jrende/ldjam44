@@ -1090,6 +1090,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.489
       objectReference: {fileID: 0}
+    - target: {fileID: 8642282712857640270, guid: f9f7baed1c1f5c04fa62336dc814eb89,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f7baed1c1f5c04fa62336dc814eb89, type: 3}
 --- !u!1001 &1415497125
