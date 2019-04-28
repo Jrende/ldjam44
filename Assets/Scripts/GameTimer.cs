@@ -10,11 +10,9 @@ public class GameTimer : MonoBehaviour
     
     private TextMeshProUGUI textGui;
     private float startTime;
-    private VictoryCondition vc;
 
     void Start() {
         textGui = this.gameObject.GetComponentInChildren(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
-        vc = va.gameObject.GetComponentInChildren(typeof(VictoryCondition)) as VictoryCondition;
         StartCoroutine("GameTimerFunction");
     }
 
@@ -31,6 +29,7 @@ public class GameTimer : MonoBehaviour
         startTime = Time.fixedTime;
         yield return new WaitForSeconds(initialGameTime);
         Debug.Log("Time is up");
+        VictoryCondition vc = va.gameObject.GetComponentInChildren(typeof(VictoryCondition)) as VictoryCondition;
         vc.loseByTimeUp();
     }
 }
