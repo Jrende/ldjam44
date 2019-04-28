@@ -54,10 +54,10 @@ public class AngryCommentGenerator : MonoBehaviour
     private int getIndexFromSceneName(string sceneName)
     {
         Dictionary<string, int> sceneIndexes = new Dictionary<string, int>{
-            { "Level 1", 0 },
-            { "Level 2", 1 },
-            { "Level 3", 2 },
-            { "Level 4", 3 }
+            { "Level1", 0 },
+            { "Level2", 1 },
+            { "Level3", 2 },
+            { "Level4", 3 }
         };
         int defaultValue = 0;
         sceneIndexes.TryGetValue(sceneName, out defaultValue);
