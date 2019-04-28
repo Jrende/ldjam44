@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    public float initialGameTime = 60f;
+    public float initialGameTime = 15f;
     public GameObject va;
     
     private TextMeshProUGUI textGui;
@@ -26,6 +26,10 @@ public class GameTimer : MonoBehaviour
             textGui.text = string.Format("{0,5:N2}", remainingTime);
         } else {
             textGui.text = "0.00";
+        }
+
+        if (remainingTime < 10f) {
+            textGui.color = new Color32(255, 0, 0, 255);
         }
     }
 
