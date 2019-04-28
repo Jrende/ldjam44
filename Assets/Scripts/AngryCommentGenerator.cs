@@ -19,9 +19,9 @@ public class AngryCommentGenerator : MonoBehaviour {
         }, new string[]{
             "Comrade, hurry it up.", "I feel like been queueing since Perestroika!", "Blyad, can you be any slower?",
             "This is like queueing for buying Lada.", "Are you trying to bring down system by being slow, comrade?",
-            "Comrade, are you waiting for inflation to make your Vodka cheaper??",
-            "Drog, the vodka will evaporate, pay up and drink it fast, for the motherland!",
-            "Are we waiting for the next meltdown? Pay up already comrade!",
+            "Comrade, are you waiting for inflation to make Vodka cheaper??",
+            "Drog, vodka will evaporate, pay up and drink fast, for motherland!",
+            "Are we waiting for next meltdown? Pay up already comrade!",
             "I’m turning into Babuchka, pay, pay, plati!!!!"
         }, new string[]{
             "Dost thou have naught but idle time?", "Make haste, knave!", "Hath thou not a care in the world!?",
