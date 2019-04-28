@@ -4,12 +4,12 @@ using UnityEngine.AI;
 public class HandMovement : MonoBehaviour
 {
     private Plane groundPlane;
-    public GameObject planeGameObject;
     private Vector3 target;
     private NavMeshAgent mrSmith;
     
     void Start()
     {
+        GameObject planeGameObject = GameObject.FindGameObjectWithTag("terrain");
         groundPlane = new Plane(planeGameObject.transform.up, planeGameObject.transform.position);
         mrSmith = GetComponent<NavMeshAgent>();
     }
