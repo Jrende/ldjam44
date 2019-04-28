@@ -42,5 +42,9 @@ public class LoadScenes : MonoBehaviour
         {
             Load("EndScene");
         }
+        else if (name == "EndScene")
+        {
+            Application.Quit();
+        }
     }
 }
