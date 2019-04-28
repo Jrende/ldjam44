@@ -34,7 +34,7 @@ public class IntroScript : MonoBehaviour
         }
         else if (panel2.activeInHierarchy)
         {
-            SceneManager.LoadScene("JoesScem");
+            SceneManager.LoadScene("Level1");
         }
         
     }

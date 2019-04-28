@@ -379,11 +379,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2964453719064495194}
     m_Modifications:
-    - target: {fileID: 8171832362252397726, guid: f59baf32ca12c584bb1f1d10e6468510,
-        type: 3}
-      propertyPath: m_Name
-      value: VictoryArea
-      objectReference: {fileID: 0}
     - target: {fileID: 8171832362252397722, guid: f59baf32ca12c584bb1f1d10e6468510,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -439,6 +434,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8171832362252397726, guid: f59baf32ca12c584bb1f1d10e6468510,
+        type: 3}
+      propertyPath: m_Name
+      value: VictoryArea
+      objectReference: {fileID: 0}
     - target: {fileID: 8990839857548854606, guid: f59baf32ca12c584bb1f1d10e6468510,
         type: 3}
       propertyPath: m_RenderMode
@@ -453,6 +453,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.lineCount
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830936669132644230, guid: f59baf32ca12c584bb1f1d10e6468510,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1146613775
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830936669132644230, guid: f59baf32ca12c584bb1f1d10e6468510,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f59baf32ca12c584bb1f1d10e6468510, type: 3}
