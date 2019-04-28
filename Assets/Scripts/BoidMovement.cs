@@ -5,15 +5,15 @@ using UnityEngine.AI;
 
 public class BoidMovement : MonoBehaviour
 {
-    public GameObject victoryArea;
     private NavMeshAgent agent;
     private Vector3 target;
     GameObject[] hands;
-    float avoidDist = 4f;
-    float calmDist = 5f;
-    float panicSpeed = 10.0f;
-    float wanderSpeed = 1.5f;
-    Random rnd = new Random();
+    public float avoidDist = 4f;
+    public float calmDist = 5f;
+    public float panicSpeed = 10.0f;
+    public float panicAcceleration = 15f;
+    public float wanderSpeed = 1.5f;
+    public float wanderAcceleration = 8f;
 
     public enum State { Panic, Wander, Caught };
     State currentState = State.Wander;
@@ -38,7 +38,7 @@ public class BoidMovement : MonoBehaviour
             Debug.DrawLine(target, target + Vector3.up);
             agent.destination = target;
             agent.speed = panicSpeed;
-            agent.acceleration = 15f;
+            agent.acceleration = panicAcceleration;
             currentState = State.Panic;
         }
 
@@ -47,7 +47,7 @@ public class BoidMovement : MonoBehaviour
             currentState = State.Wander;
             target = getRandomPosition();
             agent.speed = wanderSpeed;
-            agent.acceleration = 8f;
+            agent.acceleration = wanderAcceleration;
         }
 
         if (currentState == State.Wander)
