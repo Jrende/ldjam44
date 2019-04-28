@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,14 +154,14 @@ Transform:
   - {fileID: 655987742}
   - {fileID: 1415497126}
   - {fileID: 432389288}
-  - {fileID: 1425126752}
   - {fileID: 1708529617}
+  - {fileID: 1425126752}
+  - {fileID: 1066451083}
   - {fileID: 314878349}
+  - {fileID: 1412937447}
   - {fileID: 1310016143}
   - {fileID: 1247448617}
-  - {fileID: 1066451083}
   - {fileID: 2104482746}
-  - {fileID: 1412937447}
   - {fileID: 780823478}
   - {fileID: 1934444118}
   - {fileID: 1498042089}
@@ -1184,15 +1184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2997864315648276352, guid: f9f7baed1c1f5c04fa62336dc814eb89,
+    - target: {fileID: 8642282712857640270, guid: f9f7baed1c1f5c04fa62336dc814eb89,
         type: 3}
-      propertyPath: requiredForVictory
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 452811460281837502, guid: f9f7baed1c1f5c04fa62336dc814eb89,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.448
+      propertyPath: sceneToLoad
+      value: EndScene
       objectReference: {fileID: 0}
     - target: {fileID: 640718920207909595, guid: f9f7baed1c1f5c04fa62336dc814eb89,
         type: 3}
@@ -1204,10 +1199,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8642282712857640270, guid: f9f7baed1c1f5c04fa62336dc814eb89,
+    - target: {fileID: 452811460281837502, guid: f9f7baed1c1f5c04fa62336dc814eb89,
         type: 3}
-      propertyPath: sceneToLoad
-      value: EndScene
+      propertyPath: m_LocalPosition.x
+      value: -0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997864315648276352, guid: f9f7baed1c1f5c04fa62336dc814eb89,
+        type: 3}
+      propertyPath: requiredForVictory
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049180866070798349, guid: f9f7baed1c1f5c04fa62336dc814eb89,
+        type: 3}
+      propertyPath: Mute
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f7baed1c1f5c04fa62336dc814eb89, type: 3}
