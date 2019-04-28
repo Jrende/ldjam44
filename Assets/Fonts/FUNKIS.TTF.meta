@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ef80ae034c0270e5b5428e87427eced
+guid: da3854f1c0d9358a0bbe8ddaa8c3d873
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: Sweden Funkis Straight
   fontNames:
   - Sweden Funkis Straight
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5ef80ae034c0270e5b5428e87427eced, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

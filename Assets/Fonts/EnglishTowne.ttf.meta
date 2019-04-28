@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec12d560ac53b84d48df7bda25f912a6
+guid: 91d9023d518c7b35ca2c6858f24030db
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: English Towne
   fontNames:
   - English Towne
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ec12d560ac53b84d48df7bda25f912a6, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
