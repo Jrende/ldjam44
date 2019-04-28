@@ -7,13 +7,13 @@ public class VictoryCondition : MonoBehaviour
 	public int requiredForVictory;
 	private int currentCash = 0;
     public GameObject victoryScreen;
-	// Start is called before the first frame update
+	public GameObject defeatScreen;
+
 	void Start()
 	{
 
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
 
@@ -39,5 +39,9 @@ public class VictoryCondition : MonoBehaviour
 		{
 			currentCash--;
 		}
+	}
+
+	public void loseByTimeUp() {
+		defeatScreen.SetActive(true);
 	}
 }
