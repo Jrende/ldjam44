@@ -6,6 +6,7 @@ public class VictoryCondition : MonoBehaviour
 {
 	public int requiredForVictory;
 	private int currentCash = 0;
+    public GameObject victoryScreen;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -25,7 +26,8 @@ public class VictoryCondition : MonoBehaviour
 			currentCash++;
 		}
 		if (currentCash >= requiredForVictory) {
-			Debug.Log("You are winner!");
+            victoryScreen.SetActive(true);
+			//Debug.Log("You are winner!");
 		}
 		Debug.Log("Enter");
 	}

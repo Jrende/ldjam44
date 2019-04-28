@@ -15,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Hand
   - 
   - 
   - 
@@ -42,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Hand
+    uniqueID: 1146613775
     locked: 0
