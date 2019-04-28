@@ -16,6 +16,10 @@ public class GameTimer : MonoBehaviour
         StartCoroutine("GameTimerFunction");
     }
 
+    public void resetTimer() {
+        StartCoroutine("GameTimerFunction");
+    }
+
     void Update() {
         float remainingTime = initialGameTime - (Time.fixedTime - startTime);
         if (remainingTime > 0) {
