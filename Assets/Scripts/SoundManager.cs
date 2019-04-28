@@ -20,9 +20,7 @@ public class SoundManager : MonoBehaviour
         var states = getStates();
         int totalCoins = states.Count;
         int numberOfPanicked = states.Where(state => state == BoidMovement.State.Panic).Count();
-        float volume = ((float) numberOfPanicked / (float) totalCoins);
-        Debug.Log("volume: " + volume);
-        
+        float volume = ((float)numberOfPanicked / (float)totalCoins);
         ratSound.volume = Mathf.Min(1.0f, volume);
         fallingCashSound.volume = volume;
     }

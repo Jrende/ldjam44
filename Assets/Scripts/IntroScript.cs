@@ -7,7 +7,6 @@ public class IntroScript : MonoBehaviour
 {
     public GameObject panel0;
     public GameObject panel1;
-    public GameObject panel2;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +27,6 @@ public class IntroScript : MonoBehaviour
             panel1.SetActive(true);
         }
         else if (panel1.activeInHierarchy)
-        {
-            panel1.SetActive(false);
-            panel2.SetActive(true);
-        }
-        else if (panel2.activeInHierarchy)
         {
             SceneManager.LoadScene("Level1");
         }
